@@ -4,9 +4,14 @@ import { defineConfig } from "vitepress";
 export default defineConfig({
   title: "小G的成长之路",
   description: "A VitePress Site",
+  head: [
+    // 配置站点的favicon，将favicon.ico文件放在public文件夹下
+    ['link', { rel: 'icon', href: '/favicon.ico' }],
+    // 配置其他头部元数据
+    // ...
+  ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    logo: "/favicon.ico",
     nav: [
       { text: "首页", link: "/" },
       { text: "关于我", link: "/aboutme" },
