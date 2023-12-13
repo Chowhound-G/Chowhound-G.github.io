@@ -3,16 +3,19 @@
 layout: home
 
 hero:
-  name: "My Awesome Project"
+  name: "小G的成长之路"
   text: "A VitePress Site"
   tagline: My great project tagline
   actions:
     - theme: brand
-      text: Markdown Examples
+      text: 开始查看
       link: /markdown-examples
     - theme: alt
-      text: API Examples
+      text: 关于小G
       link: /api-examples
+  image: 
+    src: /avatar.jpg
+  
 
 features:
   - title: Feature A
