@@ -12,7 +12,7 @@ hero:
       link: /markdown-examples
     - theme: alt
       text: 关于小G
-      link: /api-examples
+      link: /aboutme
   image: 
     src: /avatar.jpg
   
