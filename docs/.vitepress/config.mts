@@ -68,7 +68,7 @@ export default defineConfig({
     },
     socialLinks: [{ icon: "github", link: "https://github.com/Chowhound-G/" }],
     lastUpdated: {
-      text: 'Updated at',
+      text: '更新于',
       formatOptions: {
         dateStyle: 'full',
         timeStyle: 'medium'
