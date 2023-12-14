@@ -1,6 +1,8 @@
 ---
 outline: deep
-lastUpdated: true
+
+aside: false
+lastUpdated: false
 ---
 
 # 关于我

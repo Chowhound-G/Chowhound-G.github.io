@@ -12,6 +12,7 @@
   "author": "guoxing",
   "license": "ISC",
   "devDependencies": {
+    "typescript": "^5.3.3",
     "vitepress": "^1.0.0-rc.25"
   }
 }

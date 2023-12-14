@@ -18,7 +18,7 @@ export default defineConfig({
       {
         text: "开发",
         items: [
-          { text: "前端", link: "/frontend/index" },
+          { text: "前端", link: "/frontend/" },
           { text: "后端", link: "/backend/" },
         ],
       },
@@ -42,22 +42,13 @@ export default defineConfig({
     sidebar: {
       // This sidebar gets displayed when a user
       // is on `guide` directory.
-      '/': [
-        {
-          text: '关于我',
-          items: [
-            { text: 'Index', link: '/guide/' },
-            { text: 'One', link: '/guide/one' },
-            { text: 'Two', link: '/guide/two' }
-          ]
-        }
-      ],
+   
 
       // This sidebar gets displayed when a user
       // is on `config` directory.
       '/backend/': [
         {
-          text: 'Config',
+          text: '后端开发',
           items: [
             { text: 'Java', link: '/backend/' },
             { text: 'Python', link: '/backend/Python' },
@@ -65,10 +56,35 @@ export default defineConfig({
             { text: 'Qt', link: '/backend/Qt' }
           ]
         }
-      ]
+      ],
+      '/frontend/': [
+        {
+          text: '前端开发',
+          items: [
+            { text: 'Internet', link: '/frontend/' },
+            { text: 'Html', link: '/frontend/html' },
+            { text: 'Css', link: '/frontend/css' },
+            { text: 'Javascript', link: '/frontend/javascript' },
+            { text: 'Typescript', link: '/frontend/typescript' },
+            { text: 'Node.js', link: '/frontend/node' },
+            { text: 'Vue', link: '/frontend/vue' },
+            { text: 'Nuxt.js', link: '/frontend/nuxt' },
+            { text: 'React', link: '/frontend/react' },
+            { text: 'Next.js', link: '/frontend/next' },
+            { text: 'Uniapp', link: '/frontend/uniapp' },
+            { text: 'webgl', link: '/frontend/webgl' },
+            { text: 'three.js', link: '/frontend/three' },
+            { text: 'GraphQL', link: '/frontend/graphql' },
+            { text: 'Flutter', link: '/frontend/flutter' },
+            { text: 'Electron', link: '/frontend/electron' },
+            { text: 'Progressive Web Apps', link: '/frontend/pwa' },
+            { text: '项目', link: '/frontend/projects' },
+            
+          ]
+        }
+      ],
     },
     footer: {
-      message: 'Released under the MIT License.',
       copyright: 'Copyright © 2023-present Chowhound-G'
     },
     socialLinks: [{ icon: "github", link: "https://github.com/Chowhound-G/" }],

@@ -1,5 +1,9 @@
 /* .vitepress/theme/custom.css */
 
+::marker{
+  color: var(--vp-c-brand-1);
+}
+
 /**
  * Colors: Solid
  * -------------------------------------------------------------------------- */
@@ -166,6 +170,7 @@
  * -------------------------------------------------------------------------- */
 
 :root {
+  /* --vp-c-text-1: rgba(60, 60, 67); */
   --vp-c-text-1: rgba(60, 60, 67);
   --vp-c-text-2: rgba(60, 60, 67, 0.78);
   --vp-c-text-3: rgba(60, 60, 67, 0.56);
@@ -532,3 +537,12 @@
   --vp-local-search-highlight-bg: var(--vp-c-brand-1);
   --vp-local-search-highlight-text: var(--vp-c-neutral-inverse);
 }
+
+
+.vp-doc blockquote{
+  border-color:var(--vp-c-brand-1);
+}
+.vp-doc a{
+  text-decoration: none;
+}
+
