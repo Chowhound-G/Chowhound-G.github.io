@@ -9,7 +9,7 @@ hero:
   actions:
     - theme: brand
       text: 开始查看
-      link: /markdown-examples
+      link: /frontend/
     - theme: alt
       text: 关于小G
       link: /aboutme

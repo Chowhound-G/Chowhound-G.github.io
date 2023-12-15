@@ -26,7 +26,14 @@ export default defineConfig({
       { text: "网络安全", link: "/network-security/index" },
       { text: "AI", link: "/AI/indedx" },
       { text: "UI/UX", link: "/UI-UX" },
-      { text: "考研408", link: "/408" },
+      { text: "考研408", items: [
+        { text: "考研数学", link: "/408/math" },
+        { text: "英语", link: "/408/English" },
+        { text: "数据结构和算法", link: "/408/DS" },
+        { text: "操作系统", link: "/408/OS" },
+        { text: "计算机网络", link: "/408/network" },
+        { text: "计算机组成原理", link: "/408/compositon" },
+      ],},
       {
         text: "小笔记",
         items: [
@@ -46,17 +53,7 @@ export default defineConfig({
 
       // This sidebar gets displayed when a user
       // is on `config` directory.
-      '/backend/': [
-        {
-          text: '后端开发',
-          items: [
-            { text: 'Java', link: '/backend/' },
-            { text: 'Python', link: '/backend/Python' },
-            { text: 'C#', link: '/backend/C#' },
-            { text: 'Qt', link: '/backend/Qt' }
-          ]
-        }
-      ],
+      
       '/frontend/': [
         {
           text: '前端开发',
@@ -71,18 +68,62 @@ export default defineConfig({
             { text: 'Nuxt.js', link: '/frontend/nuxt' },
             { text: 'React', link: '/frontend/react' },
             { text: 'Next.js', link: '/frontend/next' },
+            { text: 'Svelte', link: '/frontend/svelte' },
             { text: 'Uniapp', link: '/frontend/uniapp' },
             { text: 'webgl', link: '/frontend/webgl' },
             { text: 'three.js', link: '/frontend/three' },
             { text: 'GraphQL', link: '/frontend/graphql' },
             { text: 'Flutter', link: '/frontend/flutter' },
+            { text: 'ReactNative', link: '/frontend/reactnative' },
             { text: 'Electron', link: '/frontend/electron' },
             { text: 'Progressive Web Apps', link: '/frontend/pwa' },
             { text: '项目', link: '/frontend/projects' },
+          ]
+        }
+      ],
+      '/backend/': [
+        {
+          text: '后端开发',
+          items: [
+            { text: 'Java', link: '/backend/java' },
+            { text: 'Python', link: '/backend/python' },
+            { text: 'PHP', link: '/backend/php' },
+            { text: 'C#', link: '/backend/C#' },
+            { text: 'C++', link: '/backend/Qt' },
+            { text: 'Go', link: '/backend/go' },
+            { text: 'Ruby', link: '/backend/ruby' },
+            { text: 'Rust', link: '/backend/rust' },
+            { text: '数据库', link: '/backend/database' },
+            { text: '数据库扩展', link: '/backend/scalingDatabase' },
+            { text: '认证', link: '/backend/authentication' },
+            { text: '消息代理', link: '/backend/messagebroker' },
+            { text: '搜索引擎', link: '/backend/searchEngine' },
+            { text: '架构模式', link: '/backend/architecturialPattern' },
+            { text: 'Web服务器', link: '/backend/webServer' },
+            { text: '网络安全', link: '/backend/webSecurity' },
+            { text: 'CI/CD', link: '/backend/CICD' },
+            { text: '测试', link: '/backend/testing' },
+            { text: '规模构建', link: '/backend/BuildingforScale' },
+            
             
           ]
         }
       ],
+      '/408/': [
+        {
+          text: '考研408',
+          items: [
+            { text: '数学', link: '/frontend/' },
+            { text: '英语', link: '/frontend/html' },
+            { text: '数据结构', link: '/frontend/css' },
+            { text: '操作系统', link: '/frontend/javascript' },
+            { text: 'Typescript', link: '/frontend/typescript' },
+            { text: 'Node.js', link: '/frontend/node' },
+            { text: 'Vue', link: '/frontend/vue' },
+            { text: 'Nuxt.js', link: '/frontend/nuxt' },
+          ]
+        }
+      ]
     },
     footer: {
       copyright: 'Copyright © 2023-present Chowhound-G'

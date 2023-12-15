@@ -1,31 +1,63 @@
-# Internet
-> The Internet is a global network of computers connected to each other which communicate through a standardized set of protocols.
+# 前端开发
 
-因特网是一个由相互连接的计算机组成的全球网络，这些计算机通过一套标准化的协议进行通信。
+## 基础技能
+- **HTML**: 网页结构的基础。
+  - 标签、属性
+  - 表单和输入
+  - 语义化HTML
+- **CSS**: 用于样式化网页和布局。
+  - 选择器、盒模型
+  - 响应式设计和Flexbox
+  - CSS Grid、动画
+  - 预处理器（如Sass）
+- **JavaScript**: 网页交互的核心。
+  - 基础语法
+  - DOM操作
+  - 事件处理
+  - ES6+新特性
+  - 异步编程（Promises, Async/Await）
 
-## How does the Internet work?
+## 现代前端框架和库
+- **React.js**
+  - 组件化开发
+  - 状态管理（如使用Redux）
+  - Hooks和生命周期
+- **Vue.js**
+  - 响应式原理
+  - 组件和Vue实例
+  - Vue Router和Vuex
+- **Angular**
+  - 模块化和依赖注入
+  - 组件、服务和路由
+  - RxJS和表单处理
 
-[参考回答:](https://cs.fyi/guide/how-does-internet-work)
-+ The internet is a global network of interconnected computers that uses a standard set of communication protocols to exchange data.
-+ The internet works by connecting devices and computer systems together using standardized protocols, such as IP and TCP.
-+ The core of the internet is a global network of interconnected routers that direct traffic between different devices and systems.
-+ Basic concepts and terminology that you need to familiarize yourself with include packets, routers, IP addresses, domain names, DNS, HTTP, HTTPS, and SSL/TLS.
-+ Protocols play a critical role in enabling communication and data exchange over the internet, allowing devices and systems from different manufacturers and vendors to communicate seamlessly.
+## 版本控制
+- **Git**
+  - 基本命令（如`git clone`, `git commit`, `git push`等）
+  - 分支管理
+  - 合并和冲突解决
 
+## 构建工具和包管理
+- **npm或yarn**
+  - 包安装和版本管理
+  - 脚本运行
+- **Webpack**
+  - 模块打包
+  - 加载器和插件
+  - 开发和生产环境配置
 
+## Web性能优化
+- 页面加载优化（如懒加载、预加载）
+- 代码分割和缓存策略
+- 网络性能优化（如HTTP/2）
 
+## 其他重要概念
+- **响应式和自适应设计**
+- **Web安全知识**（如XSS和CSRF）
+- **浏览器兼容性**
+- **Web标准和最佳实践**
 
-## What is HTTP 
-
-> HTTP is the TCP/IP based application layer communication protocol which standardizes how the client and server communicate with each other. HTTP follows a classical “Client-Server model” with a client opening a connection request, then waiting until it receives a response. HTTP is a stateless protocol, that means that the server does not keep any data (state) between two requests.
-
-HTTP是基于TCP/IP的应用层通信协议，它规范了客户端和服务器之间的通信方式。HTTP遵循经典的`“客户机-服务器模型”`，客户机打开连接请求，然后等待，直到收到响应。HTTP是一种无状态协议，这意味着服务器在两个请求之间不保留任何数据(状态)。
-
-
-
-## What is a Domain Name?
-
-> A domain name is a unique, easy-to-remember address used to access websites, such as ‘google.com’, and ‘facebook.com’. Users can connect to websites using domain names thanks to the Domain Name System (DNS).
-
-域名是一个独特的，易于记忆的地址，用于访问网站，如“google.com”和“facebook.com”。通过域名系统`DNS (domain Name System)`，用户可以通过域名连接到网站。
-
+## 实践和项目经验
+- 参与实际项目，应用所学知识
+- 使用GitHub托管代码和协作
+- 构建个人作品集
