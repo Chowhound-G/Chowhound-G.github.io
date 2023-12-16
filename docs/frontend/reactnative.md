@@ -1,4 +1,4 @@
-# 学习 React Native 的要点
+# 学习 React Native 
 
 ## 基础知识
 1. **JavaScript 基础**: 理解变量、函数、对象、数组和ES6特性等。

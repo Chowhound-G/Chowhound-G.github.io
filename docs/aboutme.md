@@ -16,8 +16,11 @@ lastUpdated: false
 
 其次才是分享,将自己学习到的知识分享给他人, 希望可以给他人带来帮助🧐
 
-We will lean best by doing.
+`We will lean best by doing.`
 
+目前来讲涉及的内容比较多,然后每一点都没有详细去写,每天都会更新
+
+涉及的学习项目部分,有空就会更新到仓库里
 
 
 ## 联系我

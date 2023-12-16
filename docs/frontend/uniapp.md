@@ -1,4 +1,4 @@
-# uni-app 学习要点
+# uni-app 
 
 ## 基础概念
 - uni-app简介：理解uni-app及其跨平台特性。

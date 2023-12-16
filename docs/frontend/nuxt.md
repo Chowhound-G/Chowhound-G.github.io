@@ -1,4 +1,4 @@
-# Nuxt.js 学习要点
+# Nuxt.js 
 
 ## 基础知识
 - Nuxt.js简介：理解Nuxt.js的用途和特性。

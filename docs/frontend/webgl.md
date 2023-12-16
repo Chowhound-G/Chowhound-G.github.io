@@ -1,4 +1,4 @@
-# WebGL 学习要点
+# WebGL 
 
 ## 基础概念
 - WebGL简介：理解WebGL及其在Web中的应用。

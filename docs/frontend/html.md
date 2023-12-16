@@ -1,5 +1,5 @@
 
-# HTML 学习要点
+# HTML 
 
 ## 基础结构
 - `<!DOCTYPE html>`: 声明文档类型。

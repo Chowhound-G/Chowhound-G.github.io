@@ -1,4 +1,4 @@
-# Three.js 学习要点
+# Three.js 
 
 ## 基础知识
 - Three.js简介：了解Three.js及其在3D图形中的应用。

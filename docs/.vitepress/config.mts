@@ -22,9 +22,9 @@ export default defineConfig({
           { text: "后端", link: "/backend/" },
         ],
       },
-      { text: "运维", link: "/markdown-examples/index" },
-      { text: "网络安全", link: "/network-security/index" },
-      { text: "AI", link: "/AI/indedx" },
+      { text: "运维", link: "/devops/" },
+      { text: "网络安全", link: "/network-security/" },
+      { text: "AI", link: "/AI/" },
       { text: "UI/UX", link: "/UI-UX" },
       { text: "考研408", items: [
         { text: "考研数学", link: "/408/math" },
@@ -58,7 +58,7 @@ export default defineConfig({
         {
           text: '前端开发',
           items: [
-            { text: 'Internet', link: '/frontend/' },
+            { text: 'Internet', link: '/frontend/internet' },
             { text: 'Html', link: '/frontend/html' },
             { text: 'Css', link: '/frontend/css' },
             { text: 'Javascript', link: '/frontend/javascript' },
@@ -88,8 +88,8 @@ export default defineConfig({
             { text: 'Java', link: '/backend/java' },
             { text: 'Python', link: '/backend/python' },
             { text: 'PHP', link: '/backend/php' },
-            { text: 'C#', link: '/backend/C#' },
-            { text: 'C++', link: '/backend/Qt' },
+            { text: 'C#', link: '/backend/Csharp' },
+            { text: 'C++', link: '/backend/C++' },
             { text: 'Go', link: '/backend/go' },
             { text: 'Ruby', link: '/backend/ruby' },
             { text: 'Rust', link: '/backend/rust' },
@@ -104,8 +104,6 @@ export default defineConfig({
             { text: 'CI/CD', link: '/backend/CICD' },
             { text: '测试', link: '/backend/testing' },
             { text: '规模构建', link: '/backend/BuildingforScale' },
-            
-            
           ]
         }
       ],
@@ -113,14 +111,29 @@ export default defineConfig({
         {
           text: '考研408',
           items: [
-            { text: '数学', link: '/frontend/' },
-            { text: '英语', link: '/frontend/html' },
-            { text: '数据结构', link: '/frontend/css' },
-            { text: '操作系统', link: '/frontend/javascript' },
-            { text: 'Typescript', link: '/frontend/typescript' },
-            { text: 'Node.js', link: '/frontend/node' },
-            { text: 'Vue', link: '/frontend/vue' },
-            { text: 'Nuxt.js', link: '/frontend/nuxt' },
+            { text: '数学', link: '/408/' },
+            { text: '英语', link: '/408/English' },
+            { text: '数据结构', link: '/408/DS' },
+            { text: '操作系统', link: '/408/OS' },
+            { text: '计算机网络', link: '/408/network' },
+            { text: '计算机组成原理', link: '/408/composition' }
+          ]
+        }
+      ],
+      '/devops/': [
+        {
+          text: '运维',
+          items: [            
+            { text: '网络', link: '/devops/network' },
+            { text: '操作系统', link: '/devops/OS' },
+            { text: '脚本语言', link: '/devops/script' },
+            { text: '终端', link: '/devops/Terminal' },
+            { text: '容器', link: '/devops/container' },
+            { text: '日志', link: '/devops/LogManagement' },
+            { text: '自动化工具', link: '/devops/configurationManagement' },
+            { text: 'CI/CD', link: '/devops/CICD' },
+            { text: '云计算', link: '/devops/cloud' },
+            { text: '云服务', link: '/devops/servless' }, 
           ]
         }
       ]
