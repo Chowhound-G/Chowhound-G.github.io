@@ -26,6 +26,7 @@ export default defineConfig({
       { text: "网络安全", link: "/network-security/" },
       { text: "AI", link: "/AI/" },
       { text: "UI/UX", link: "/UI-UX" },
+      { text: "数据库", link: "/database" },
       { text: "考研408", items: [
         { text: "考研数学", link: "/408/math" },
         { text: "英语", link: "/408/English" },
