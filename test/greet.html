@@ -1,9 +1,20 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>TypeScript Greeter</title>
-  </head>
-  <body>
-    <script src="greeter.js"></script>
-  </body>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>User Agent Collection Page</title>
+</head>
+<body>
+<h1>Your UserAgent is :</h1>
+<p id="userAgent" style="color:red;"></p> <!-- Placeholder for the user agent string -->
+<p>Thank You !!!</p>
+<p>Collection Successful</p>
+<p>Wish You Have A Nice Day !!!</p>
+
+<script>
+  // This script will run when the page loads
+  document.getElementById('userAgent').textContent = navigator.userAgent;
+</script>
+</body>
 </html>
