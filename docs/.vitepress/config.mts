@@ -71,6 +71,7 @@ export default defineConfig({
             { text: 'Electron', link: '/frontend/electron' },
             { text: 'Progressive Web Apps', link: '/frontend/pwa' },
             { text: '项目', link: '/frontend/projects' },
+            { text: '其他', link: '/frontend/other' },
           ]
         }
       ],
