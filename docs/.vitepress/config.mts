@@ -16,25 +16,26 @@ export default defineConfig({
       { text: "首页", link: "/" },
       { text: "关于我", link: "/aboutme" },
       {
-        text: "开发",
-        items: [
-          { text: "前端", link: "/frontend/" },
-          // { text: "后端", link: "/backend/" },
-        ],
+        text: "前端",
+        link: "/frontend/"
+      },
+      {
+        text: "后端",
+        link: "/backend/"
       },
       { text: "运维", link: "/devops/" },
       { text: "网络安全", link: "/network-security/" },
       // { text: "AI", link: "/AI/" },
-      { text: "UI/UX", link: "/UI-UX" },
-      { text: "数据库", link: "/database" },
+      { text: "UI/UX", link: "/UI-UX/" },
+      { text: "数据库", link: "/database/" },
       {
         text: "小笔记",
         items: [
-          { text: "实用小技巧", link: "/tips" },
-          { text: "Bug以及解决方案", link: "/solutions" },
-          { text: "博客方案", link: "/Blog" },
-          { text: "读书笔记", link: "/Reading" },
-          { text: "导航资源", link: "/navigator" },
+          { text: "实用小技巧", link: "/notes/tips" },
+          { text: "Bug以及解决方案", link: "/notes/solutions" },
+          { text: "博客方案", link: "/notes/Blog" },
+          { text: "读书笔记", link: "/notes/Reading" },
+          { text: "导航资源", link: "/notes/navigator" },
         ],
       }
     ],
@@ -75,42 +76,42 @@ export default defineConfig({
           ]
         }
       ],
-      // '/backend/': [
-      //   {
-      //     text: '后端开发',
-      //     items: [
-      //       { text: 'Java', link: '/backend/java' },
-      //       { text: 'Python', link: '/backend/python' },
-      //       { text: 'PHP', link: '/backend/php' },
-      //       { text: 'C#', link: '/backend/Csharp' },
-      //       { text: 'C++', link: '/backend/C++' },
-      //       { text: 'Go', link: '/backend/go' },
-      //       { text: 'Ruby', link: '/backend/ruby' },
-      //       { text: 'Rust', link: '/backend/rust' },
-      //       { text: '数据库', link: '/backend/database' },
-      //       { text: '数据库扩展', link: '/backend/scalingDatabase' },
-      //       { text: '认证', link: '/backend/authentication' },
-      //       { text: '消息代理', link: '/backend/messagebroker' },
-      //       { text: '搜索引擎', link: '/backend/searchEngine' },
-      //       { text: '架构模式', link: '/backend/architecturialPattern' },
-      //       { text: 'Web服务器', link: '/backend/webServer' },
-      //       { text: '网络安全', link: '/backend/webSecurity' },
-      //       { text: 'CI/CD', link: '/backend/CICD' },
-      //       { text: '测试', link: '/backend/testing' },
-      //       { text: '规模构建', link: '/backend/BuildingforScale' },
-      //     ]
-      //   }
-      // ],
+      '/backend/': [
+        {
+          text: '后端开发',
+          items: [
+            { text: 'Java', link: '/backend/java' },
+            { text: 'Python', link: '/backend/python' },
+            { text: 'PHP', link: '/backend/php' },
+            { text: 'C#', link: '/backend/Csharp' },
+            { text: 'C++', link: '/backend/C++' },
+            { text: 'Go', link: '/backend/go' },
+            { text: 'Ruby', link: '/backend/ruby' },
+            { text: 'Rust', link: '/backend/rust' },
+            { text: '数据库', link: '/backend/database' },
+            { text: '数据库扩展', link: '/backend/scalingDatabase' },
+            { text: '认证', link: '/backend/authentication' },
+            { text: '消息代理', link: '/backend/messagebroker' },
+            { text: '搜索引擎', link: '/backend/searchEngine' },
+            { text: '架构模式', link: '/backend/architecturialPattern' },
+            { text: 'Web服务器', link: '/backend/webServer' },
+            { text: '网络安全', link: '/backend/webSecurity' },
+            { text: 'CI/CD', link: '/backend/CICD' },
+            { text: '测试', link: '/backend/testing' },
+            { text: '规模构建', link: '/backend/BuildingforScale' },
+          ]
+        }
+      ],
       '/408/': [
         {
           text: '考研408',
           items: [
-            { text: '数学', link: '/408/' },
+            { text: '数学', link: '/408/Math' },
             { text: '英语', link: '/408/English' },
             { text: '数据结构', link: '/408/DS' },
             { text: '操作系统', link: '/408/OS' },
-            { text: '计算机网络', link: '/408/network' },
-            { text: '计算机组成原理', link: '/408/composition' }
+            { text: '计算机网络', link: '/408/CN' },
+            { text: '计算机组成原理', link: '/408/CP' }
           ]
         }
       ],
