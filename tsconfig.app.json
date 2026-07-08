@@ -1,0 +1,51 @@
+{
+  "compilerOptions": {
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "Bundler",
+    "allowImportingTsExtensions": true,
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "noEmit": true,
+    "jsx": "react-jsx",
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedSideEffectImports": true,
+
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": [
+    "src/main.tsx",
+    "src/router.tsx",
+    "src/routeTree.gen.ts",
+    "src/vite-env.d.ts",
+    "src/index.css",
+    "src/routes/**/*",
+    "src/content/**/*",
+    "src/features/portfolio/**/*",
+    "src/features/shared/components/ErrorComponent.tsx",
+    "src/features/shared/components/Navbar.tsx",
+    "src/features/shared/components/NotFoundComponent.tsx",
+    "src/features/shared/components/ThemeProvider.tsx",
+    "src/features/shared/components/ThemeToggle.tsx",
+    "src/features/shared/components/ui/Button.tsx",
+    "src/features/shared/components/ui/Card.tsx",
+    "src/features/shared/components/ui/Link.tsx",
+    "src/features/shared/components/ui/Spinner.tsx",
+    "src/lib/utils/cn.ts",
+    "src/lib/utils/localStorage.ts"
+  ]
+}
