@@ -19,7 +19,7 @@ function parseFrontmatter(raw: string) {
 
   if (!match) {
     return {
-      meta: {},
+      meta: {} as Record<string, string | string[]>,
       content: raw.trim(),
     };
   }
@@ -57,7 +57,9 @@ function slugFromPath(path: string) {
   return path.split("/").pop()?.replace(/\.md$/, "") ?? path;
 }
 
-function normalizeArticle(path: string, raw: string): Article {
+function normalizeArticle(path: string, raw: string): Article & {
+  published: boolean;
+} {
   const { meta, content } = parseFrontmatter(raw);
   const slug = slugFromPath(path);
   const title = String(meta.title ?? slug.replace(/-/g, " "));
@@ -65,6 +67,10 @@ function normalizeArticle(path: string, raw: string): Article {
   const date = String(meta.date ?? "");
   const readingTime = String(meta.readingTime ?? "3 min read");
   const tags = Array.isArray(meta.tags) ? meta.tags : [];
+
+  // `published` defaults to true for backwards compatibility — existing
+  // articles without this field remain visible on the site.
+  const published = String(meta.published ?? "true") === "true";
 
   return {
     slug,
@@ -74,11 +80,13 @@ function normalizeArticle(path: string, raw: string): Article {
     tags,
     readingTime,
     content,
+    published,
   };
 }
 
 export const articles = Object.entries(articleModules)
   .map(([path, raw]) => normalizeArticle(path, raw))
+  .filter((article) => article.published)
   .sort((a, b) => b.date.localeCompare(a.date));
 
 export function getArticle(slug: string) {

@@ -13,7 +13,8 @@ type Block =
   | { type: "paragraph"; text: string }
   | { type: "quote"; text: string }
   | { type: "list"; ordered: boolean; items: string[] }
-  | { type: "code"; language?: string; code: string };
+  | { type: "code"; language?: string; code: string }
+  | { type: "hr" };
 
 function isBlockStart(line: string) {
   return (
@@ -21,8 +22,20 @@ function isBlockStart(line: string) {
     /^>\s?/.test(line) ||
     /^\s*[-*]\s+/.test(line) ||
     /^\s*\d+\.\s+/.test(line) ||
-    /^```/.test(line)
+    /^```/.test(line) ||
+    isHr(line)
   );
+}
+
+/** Detect horizontal rules: ---, * * *, - - -, ___ , * ** */
+function isHr(line: string) {
+  const trimmed = line.trim();
+  // Must be only -, *, _ and spaces, at least 3 of them
+  if (!/^[-*_\s]+$/.test(trimmed)) return false;
+  const dashes = (trimmed.match(/-/g) || []).length;
+  const stars = (trimmed.match(/\*/g) || []).length;
+  const underscores = (trimmed.match(/_/g) || []).length;
+  return dashes >= 3 || stars >= 3 || underscores >= 3;
 }
 
 function parseBlocks(content: string) {
@@ -64,6 +77,13 @@ function parseBlocks(content: string) {
         level: heading[1].length,
         text: heading[2],
       });
+      index += 1;
+      continue;
+    }
+
+    // Horizontal rule: ---, * * *, - - -, etc.
+    if (isHr(line)) {
+      blocks.push({ type: "hr" });
       index += 1;
       continue;
     }
@@ -112,7 +132,7 @@ function parseBlocks(content: string) {
 }
 
 function renderInline(text: string) {
-  const pattern = /(\*\*[^*]+\*\*|`[^`]+`|\[[^\]]+\]\([^)]+\))/g;
+  const pattern = /(\*\*[^*]+\*\*|`[^`]+`|!\[[^\]]*\]\([^)]+\)|\[[^\]]+\]\([^)]+\))/g;
   const parts = text.split(pattern).filter(Boolean);
 
   return parts.map((part, index) => {
@@ -128,6 +148,23 @@ function renderInline(text: string) {
         >
           {part.slice(1, -1)}
         </code>
+      );
+    }
+
+    // Image: ![alt](url)
+    const image = part.match(/^!\[([^\]]*)\]\(([^)]+)\)$/);
+    if (image) {
+      const alt = image[1];
+      const src = image[2];
+      return (
+        <span key={index} className="block">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={src}
+            alt={alt}
+            className="my-2 rounded-lg border border-neutral-200 dark:border-neutral-800"
+          />
+        </span>
       );
     }
 
@@ -210,6 +247,15 @@ export function MarkdownRenderer({ content, className }: MarkdownRendererProps) 
                 <li key={itemIndex}>{renderInline(item)}</li>
               ))}
             </List>
+          );
+        }
+
+        if (block.type === "hr") {
+          return (
+            <hr
+              key={index}
+              className="border-t border-neutral-200 dark:border-neutral-800"
+            />
           );
         }
 
