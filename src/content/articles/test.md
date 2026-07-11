@@ -19,7 +19,7 @@ published: true
 
 下面是一张测试图片：
 
-![0e967e9a4444aa243448192d4eca47ef_thumb.jpg](https://raw.githubusercontent.com/Chowhound-G/Chowhound-G.github.io/main/public/articles-images/0e967e9a4444aa243448192d4eca47ef_thumb.jpg)
+![0e967e9a4444aa243448192d4eca47ef_thumb.jpg {small}](https://raw.githubusercontent.com/Chowhound-G/Chowhound-G.github.io/main/public/articles-images/0e967e9a4444aa243448192d4eca47ef_thumb.jpg)
 
 ---
 
