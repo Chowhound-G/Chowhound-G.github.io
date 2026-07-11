@@ -13,10 +13,10 @@ published: true
 
 > 怎么办
 > 
-> * * *
+> ---
 > 
 > 此处是分割线后
 
 下面是一张测试图片：
 
-![4f83bd674c72745121dce4f41121bfeb.jpg](https://raw.githubusercontent.com/Chowhound-G/Chowhound-G.github.io/main/public/articles-images/4f83bd674c72745121dce4f41121bfeb.jpg)
+![0e967e9a4444aa243448192d4eca47ef_thumb.jpg](https://raw.githubusercontent.com/Chowhound-G/Chowhound-G.github.io/main/public/articles-images/0e967e9a4444aa243448192d4eca47ef_thumb.jpg)
