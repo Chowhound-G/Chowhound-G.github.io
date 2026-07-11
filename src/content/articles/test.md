@@ -19,8 +19,10 @@ published: true
 
 下面是一张测试图片：
 
-![0e967e9a4444aa243448192d4eca47ef_thumb.jpg {small}](https://raw.githubusercontent.com/Chowhound-G/Chowhound-G.github.io/main/public/articles-images/0e967e9a4444aa243448192d4eca47ef_thumb.jpg)
+![0e967e9a4444aa243448192d4eca47ef_thumb.jpg  {small}](https://raw.githubusercontent.com/Chowhound-G/Chowhound-G.github.io/main/public/articles-images/0e967e9a4444aa243448192d4eca47ef_thumb.jpg)
 
 ---
 
 ![4de2e5d13bbb37bb299f4ea8ea4165fd_thumb.jpg](/uploads/4de2e5d13bbb37bb299f4ea8ea4165fd_thumb.jpg)
+
+![5a9379f8c86ea30a87238e9fca634bb7_thumb.jpg {small}](/uploads/5a9379f8c86ea30a87238e9fca634bb7_thumb.jpg)
