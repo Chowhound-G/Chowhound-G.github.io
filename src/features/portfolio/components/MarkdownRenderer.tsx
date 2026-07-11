@@ -151,18 +151,32 @@ function renderInline(text: string) {
       );
     }
 
-    // Image: ![alt](url)
+    // Image: ![alt {size}](url) — size hint is optional
     const image = part.match(/^!\[([^\]]*)\]\(([^)]+)\)$/);
     if (image) {
-      const alt = image[1];
-      const src = image[2];
+      let alt = image[1];
+      let src = image[2];
+      // Extract {size} hint from alt text
+      let sizeClass = "max-w-full";
+      const sizeMatch = alt.match(/\s*\{(small|medium|large|original)\}/);
+      if (sizeMatch) {
+        alt = alt.replace(sizeMatch[0], "");
+        const size = sizeMatch[1];
+        if (size === "small") sizeClass = "max-w-[30%]";
+        else if (size === "medium") sizeClass = "max-w-[60%]";
+        else if (size === "original") sizeClass = "max-w-none";
+      }
+      // Fix relative /uploads/ paths → full media server URL
+      if (src.startsWith("/uploads/")) {
+        src = `https://019f2bb81c537b9083731be895602f96.ap-northeast-1.a8g1v3.xyz${src}`;
+      }
       return (
         <span key={index} className="block">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={src}
             alt={alt}
-            className="my-2 rounded-lg border border-neutral-200 dark:border-neutral-800"
+            className={`my-2 rounded-lg border border-neutral-200 dark:border-neutral-800 ${sizeClass}`}
           />
         </span>
       );
