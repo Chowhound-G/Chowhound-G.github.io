@@ -151,28 +151,18 @@ function renderInline(text: string) {
       );
     }
 
-    // Image: ![alt {size}](url) — size is optional
+    // Image: ![alt](url)
     const image = part.match(/^!\[([^\]]*)\]\(([^)]+)\)$/);
     if (image) {
-      let alt = image[1];
+      const alt = image[1];
       const src = image[2];
-      // Extract {size} hint from alt text
-      let sizeClass = "max-w-full";
-      const sizeMatch = alt.match(/\s*\{(small|medium|large|original)\}/);
-      if (sizeMatch) {
-        alt = alt.replace(sizeMatch[0], "");
-        const size = sizeMatch[1];
-        if (size === "small") sizeClass = "max-w-[30%]";
-        else if (size === "medium") sizeClass = "max-w-[60%]";
-        else if (size === "original") sizeClass = "max-w-none";
-      }
       return (
         <span key={index} className="block">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={src}
             alt={alt}
-            className={`my-2 rounded-lg border border-neutral-200 dark:border-neutral-800 ${sizeClass}`}
+            className="my-2 rounded-lg border border-neutral-200 dark:border-neutral-800"
           />
         </span>
       );
